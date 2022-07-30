@@ -1,0 +1,54 @@
+.btn-primary,
+.btn-outline-primary:hover {
+    background-color: var(--yellowo-100) !important;
+    border-radius: 10px !important;
+    border: 1px solid var(--yellowo-100) !important;
+    color: var(--chineseb-100) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--yellowo-70) !important;
+    border: 1px solid var(--yellowo-70) !important;
+}
+
+.btn-outline-primary {
+    border-radius: 10px;
+    border: 1px solid var(--bdazzledb-100) !important;
+    color: var(--bdazzledb-100)
+}
+
+.btn-secondary {
+    background-color: var(--amazon-70) !important;
+    border-radius: 10px;
+    border: 1px solid var(--amazon-70) !important;
+}
+
+.btn-secondary:hover {
+    background-color: var(--amazon-20) !important;
+    border: 1px solid var(--amazon-20) !important;
+}
+
+.btn-quaternary {
+    background-color: transparent !important;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white !important;
+}
+
+.btn-quaternary:hover {
+    background-color: white !important;
+    color: var(--bdazzledb-100);
+    border: 1px solid white !important;
+}
+
+.btn-white {
+    background-color: white !important;
+    color: var(--chineseb-100) !important;
+    border-color: white !important;
+}
+
+.btn-white:hover {
+     background-color: var(--chineseb-100) !important;
+     color: white !important;
+    border-color: var(--chineseb-100) !important;
+ }

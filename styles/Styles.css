@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('/fonts/poppins/Poppins-Bold.ttf');
+  font-weight: 600 !important;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('/fonts/poppins/Poppins-SemiBold.ttf');
+  font-weight: 600 !important;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Medium';
+  src: url('/fonts/poppins/Poppins-Medium.ttf');
+  font-weight: 400 !important;
+  font-weight: normal !important;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('/fonts/poppins/Poppins-Regular.ttf');
+  font-weight: 400 !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Light';
+  src: url('/fonts/poppins/Poppins-Light.ttf');
+  font-weight: 300 !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins ExtraLight';
+  src: url('/fonts/poppins/Poppins-ExtraLight.ttf');
+  font-weight: 200 !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins Thin';
+  src: url('/fonts/poppins/Poppins-Thin.ttf');
+  font-weight: 100 !important;
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+
+  --dsg-100: #32634F;
+  --dsg-70: #669383;
+  --dsg-20: #D4E0DC;
+
+
+  --yellowo-100: #FFA63A;
+  --yellowo-70: #FFBF66;
+  --yellowo-20: #FFEDD5;
+
+  --chineseb-100: #171717;
+
+  --culture-100: #F5F6F8;
+  --culture-70: #F8F9FA;
+
+  --aliceb-100: #F2F6FF;
+
+  --spacecdt-100: #2C3853;
+  --spacecdt-70: #6C7487;
+  --spacecdt-50: #959BA9;
+  --spacecdt-20: #D5D7DD;
+
+  --bdazzledb-100: #435E80;
+  --bdazzledb-70: #738CA6;
+  --bdazzledb-20: #D0D8E1;
+  --bdazzledb-10: #E2E7ED;
+
+  --amazon-100: #428058;
+  --amazon-70: #78A388;
+  --amazon-20: #D1DED8;
+
+  --vvt-100: #FFAB91;
+  --vvt-70: #FFC4B2;
+  --vvt-20: #FFEEE9;
+
+  --iceberg-100: #8DACCC;
+  --iceberg-70: #AFC5DB;
+  --iceberg-20: #E8EEF5;
+
+  --rums-100: #F6F9E8;
+
+  --lc-100: #DCFAFF;
+
+  --footer-h: 326px;
+  --header-h: 90px;
+
+}
+
+.svg__bdazzledb-100 {
+  filter: invert(35%) sepia(16%) saturate(1213%) hue-rotate(174deg) brightness(95%) contrast(90%)
+}
+
+.svg__amazon-100 {
+  filter: invert(40%) sepia(60%) saturate(314%) hue-rotate(89deg) brightness(96%) contrast(90%);
+}
+
+.svg__white {
+  filter: invert(100%) sepia(94%) saturate(0%) hue-rotate(214deg) brightness(107%) contrast(106%);
+}
+
+.svg__azureishw-100 {
+  filter: invert(89%) sepia(26%) saturate(50%) hue-rotate(179deg) brightness(101%) contrast(87%);
+}
+
+.svg__yellowo-100 {
+  filter: invert(82%) sepia(18%) saturate(4004%) hue-rotate(329deg) brightness(101%) contrast(101%);
+}
+
+.svg__dsg-100 {
+  filter: invert(32%) sepia(21%) saturate(873%) hue-rotate(104deg) brightness(93%) contrast(86%);
+}
+
+.bg__culture100 {
+  background-color: var(--culture-100);
+}
+
+body {
+  font-family: 'Poppins Regular', serif;
+}
+
+#__next {
+  min-height: 100vh;
+}
+
+.preline {
+  white-space: pre-line;
+}
+
+.subt__ {
+  color: var(--bdazzledb-70)
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-logo img,
+.ft__logo {
+  max-width: 240px !important;
+}
+
+.container-fluid .jumbotron, .container .jumbotron {
+  border-radius: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px)
+{
+  .container-fluid .jumbotron, .container .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (min-width: 768px)
+{
+  .jumbotron {
+    padding-top: 48px;
+    width: 100%;
+  }
+}
+
+.navbar {
+  /*padding-top: 30px;
+  padding-bottom: 30px;*/
+}
+
+.jumbotron {
+  padding: 30px 60px;
+}
+
+.btn {
+  height: 45px;
+}
+
+.hero__cta {
+  height: 55px;
+}
+
+/* NavBar */
+
+.mid-menu .nav-item {
+  padding: 0 1.5em;
+}
+
+.end-menu .nav-item {
+  padding: 0 1.5em;
+}
+
+button.nvb__signup.btn.btn-primary {
+  padding: 0 2em;
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%
+}
+
+footer .ft__a {
+  color: var(--bdazzledb-70);
+  text-decoration: none;
+}
+
+footer .ft__a:hover {
+  color: var(--amazon-70);
+}
+
+footer .ft__lists {
+  margin: 10px 0
+}
+
+footer .ft__lists > li {
+  margin: 5px 0;
+}

@@ -27,7 +27,7 @@ const HowTo = () => (
       <HowToStep
         number={2}
         title="Questionnaire"
-        subtitle="Je remplis un questionnaire pour cerner votre besoin"
+        subtitle="Je remplis un questionnaire pour identifier mon besoin, mes goûts"
       />
       <Image src={ArrowC} alt="" className="arrow-circle" layout="raw" />
       <HowToStep

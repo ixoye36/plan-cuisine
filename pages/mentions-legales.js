@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import DefaultLayout from "../components/DefaultLayout";
+import Head from "next/head";
 
 const Styles = styled.div`
     max-width: 50%;
@@ -18,6 +19,9 @@ const Styles = styled.div`
 
 const MentionsLegales = () => (
   <Styles className="mx-auto">
+      <Head>
+          <title>Mentions légales</title>
+      </Head>
     <div className="container my-5 pb-5">
         <h1>Mentions l&eacute;gales et politique de confidentialit&eacute;</h1>
         <h3 className="mt-5">Éditeur</h3>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import DefaultLayout from "../components/DefaultLayout";
+import Head from "next/head";
 
 const Styles = styled.div`
     max-width: 50%;
@@ -18,6 +19,9 @@ const Styles = styled.div`
 
 const cgu = () => (
   <Styles className="mx-auto">
+    <Head>
+      <title>Conditions générales de vente</title>
+    </Head>
     <div className="container my-5">
       <h1>Conditions générales de vente de prestations de services&#160;en ligne &agrave; des consommateurs particuliers &#160;</h1>
 

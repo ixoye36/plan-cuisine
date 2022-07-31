@@ -50,107 +50,72 @@ const Styles = styled.div`
 const Footer = () => (
     <Styles>
       <footer className="page-footer font-small blue pt-4">
-        <div className="container">
-          <div className="row py-5 align-top">
-            <div className="col col-md-4 mt-md-0 mt-4">
-              <Link href="/">
-                <a className="ft-logo-section">
-                  <Image className="ft__logo" src={Logo} alt="" />
-                </a>
-              </Link>
-            </div>
-
-            <div className="col col-md-2 mb-md-0 mb-2">
-              <div className="h6">About us</div>
-              <ul className="list-unstyled ft__lists">
-                <li>
-                  <Link className="ft__a" href="#">
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link className="ft__a" href="#">
-                    Pricing
-                  </Link>
-                </li>
-                <li>
-                  <Link className="ft__a" href="#">
-                    Blog
-                  </Link>{" "}
-                </li>
-                <li>
-                  <Link className="ft__a" href="#">
-                    Help
-                  </Link>{" "}
-                </li>
-              </ul>
-            </div>
-
-            <div className="col col-md-3 mb-md-0 mb-3">
-              <div className="h6">Legal</div>
-              <ul className="list-unstyled ft__lists">
-                <li>
-                  <Link className="ft__a" href="#!">
-                    Legal terms
-                  </Link>{" "}
-                </li>
-                <li>
-                  <Link className="ft__a" href="#!">
-                    Terms of use
-                  </Link>{" "}
-                </li>
-                <li>
-                  <Link className="ft__a" href="#!">
-                    Privacy Policy
-                  </Link>{" "}
-                </li>
-                <li>
-                  <Link className="ft__a" href="#!">
-                    Cookie
-  ©                </Link>{" "}
-                </li>
-              </ul>
-            </div>
-            <div className="col col-md-2 mb-md-0 mb-2">
-              <div className="row d-flex flex-row justify-content-start">
-                <a className="ft__a social__logo" href="#!">
-                  <Image
-                    className="svg__azureishw-100"
-                    src={Linkedin}
-                    alt=""
-                    layout="raw"
-                  />
-                </a>
-                <a className="ft__a social__logo" href="#!">
-                  <Image
-                    className="svg__azureishw-100"
-                    src={Facebook}
-                    alt=""
-                    layout="raw"
-                  />
-                </a>
-                <a className="ft__a social__logo" href="#!">
-                  <Image
-                    className="svg__azureishw-100"
-                    src={Instagram}
-                    alt=""
-                    layout="raw"
-                  />
-                </a>
-                <a className="ft__a social__logo" href="#!">
-                  <Image
-                    className="svg__azureishw-100"
-                    src={Twitter}
-                    alt=""
-                    layout="raw"
-                  />
-                </a>
-              </div>
+        <div className="vstack gap-3 justify-content-center align-items-center text-center">
+          <div className="logo-footer">
+            <Link href="/">
+                    <a className="ft-logo-section">
+                      <Image className="ft__logo" src={Logo} alt="" />
+                    </a>
+            </Link>
+          </div>
+          <div className="links">
+            <ul className="list-unstyled ft__lists hstack gap-5 align-items-center">
+              <li>
+                <Link className="ft__a" href="#">
+                  A propos
+                </Link>
+              </li>
+              <li>
+                <Link className="ft__a" href="cgu">
+                  Conditions générales de ventes
+                </Link>
+              </li>
+              <li>
+                <Link className="ft__a" href="mentions-legales">
+                  Mentions légales
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col col-md-2 mb-md-0 mb-2 d-none">
+            <div className="row d-flex flex-row justify-content-start">
+              <a className="ft__a social__logo" href="#!">
+                <Image
+                  className="svg__azureishw-100"
+                  src={Linkedin}
+                  alt=""
+                  layout="raw"
+                />
+              </a>
+              <a className="ft__a social__logo" href="#!">
+                <Image
+                  className="svg__azureishw-100"
+                  src={Facebook}
+                  alt=""
+                  layout="raw"
+                />
+              </a>
+              <a className="ft__a social__logo" href="#!">
+                <Image
+                  className="svg__azureishw-100"
+                  src={Instagram}
+                  alt=""
+                  layout="raw"
+                />
+              </a>
+              <a className="ft__a social__logo" href="#!">
+                <Image
+                  className="svg__azureishw-100"
+                  src={Twitter}
+                  alt=""
+                  layout="raw"
+                />
+              </a>
             </div>
           </div>
-        </div>
-        <div className="footer-copyright text-center text-white py-3">
-          ©{new Date().getFullYear()} Futto
+          <div className="footer-copyright text-center text-white py-3">
+            ©{new Date().getFullYear()} Futto
+          </div>
         </div>
       </footer>
     </Styles>

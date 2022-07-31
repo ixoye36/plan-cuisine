@@ -33,7 +33,7 @@ const NavigationBar = () => (
           </Link>
         </div>
         <div className="collapse navbar-collapse ms-5" id="basic-navbar-nav">
-          <ul className="navbar-nav me-auto align-items-center">
+          <ul className="navbar-nav me-auto align-items-center d-none">
             <li className="nav-item me-4">
               <a className="nav-link" href="#">Accueil</a>
             </li>

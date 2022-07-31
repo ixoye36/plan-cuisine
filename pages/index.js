@@ -3,6 +3,7 @@ import DefaultLayout from "../components/DefaultLayout";
 import HeroSection from "../components/HeroSection";
 import PricingPlans from "../components/PricingPlans";
 import FeaturesSection from "../components/FeaturesSection";
+import Head from "next/head";
 
 const Styles = styled.div`
   
@@ -16,6 +17,10 @@ const Styles = styled.div`
 const Home = () => {
   return (
     <Styles>
+      <Head>
+        <title>CuisinePlan - Votre assistant cuisine</title>
+        <meta name="description" content="Obtenez votre devis de cuisine Leroy Merlin, IKEA ou Brico Depot" />
+      </Head>
       <HeroSection />
       <FeaturesSection />
       <div className="text-center my-5 pt-5" id="tarifs">

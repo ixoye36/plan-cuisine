@@ -40,7 +40,7 @@ const PricingPlans = () => {
           <div className="col-4 position-relative">
             <PricingCard
               plan="Simple"
-              price={19}
+              price={29}
               text="Vous souhaitez un plan de cuisine simple de l'enseigne de votre choix"
               btnType="primary"
               btnTxt="Commander"
@@ -55,7 +55,7 @@ const PricingPlans = () => {
           <div className="col-4 position-relative">
             <PricingCard
               plan="Inspiration"
-              price={49}
+              price={59}
               priceM={10}
               text="Vous souhaitez différentes inspirations et tarifs de plusieurs enseignes"
               btnType="outline-primary"

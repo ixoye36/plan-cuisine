@@ -40,7 +40,7 @@ const HowTo = () => (
       <HowToStep
         number={3}
         title="Livraison"
-        subtitle="Je reçois mon plan après quelques jours"
+        subtitle="Je reçois mon plan une fois que celui-ci est prêt"
       />
     </div>
   </Styles>

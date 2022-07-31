@@ -77,7 +77,7 @@ const HeroSection = () => (
                     type="button"
                     className="btn btn-primary w-50 hero__cta"
                   >
-                    C'est parti !
+                    {"C'est parti !"}
                   </button>
                 </a>
               </div>

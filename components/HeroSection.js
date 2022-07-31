@@ -68,7 +68,7 @@ const HeroSection = () => (
           <div className="row align-items-start">
             <div className="col">
               <div className="vstack gap-3">
-                <h1>Mon plan cuisine pour seulement <span>49€</span></h1>
+                <h1>Mon plan cuisine pour seulement <span>29€</span></h1>
                 <div className="hero__sub text-white opacity-50 py-4">
                   <span>Plus besoin de patienter en magasin pour votre plan de cuisine. Vous nous donnez mesures, couleurs, budget et on se charge du reste !</span>
                 </div>

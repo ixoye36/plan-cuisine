@@ -54,12 +54,13 @@ const FeaturesSection = () => (
     />
     <ZigzagLR
       title="On s'occupe de tout"
-      src={KitchenImg} subtitle="Une fois toutes les informations recueillis via un formulaire rapide, nous nous chargeons de réaliser un plan de votre future cuisine fidèle aux dimensions fournies. Voici les informations minimales dont nous avons besoin :"
+      src={KitchenImg}
+      subtitle="Une fois toutes les informations recueillis via un formulaire rapide, nous nous chargeons de réaliser un plan de votre future cuisine fidèle aux dimensions fournies. Voici les informations minimales dont nous avons besoin :"
       featList={
         [
           {
-          id: 1,
-          value: "Plan avec dimensions",
+            id: 1,
+            value: "Plan avec dimensions",
           },
           {
             id: 2,

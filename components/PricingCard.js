@@ -98,6 +98,7 @@ const PricingCard = ({
   btnTxt,
   features,
   text,
+  paymentLink,
 }) => {
   const feats = [];
   useEffect(() => {
@@ -141,7 +142,7 @@ const PricingCard = ({
           className="w-100 mx-auto mt-auto btn btn-white"
           onClick={(e) => {
             e.preventDefault();
-            window.location.href = `/register?plan=${plan.toLowerCase()}`;
+            window.location.href = paymentLink;
           }}
         >
           {btnTxt}
@@ -159,4 +160,5 @@ PricingCard.propTypes = {
   text: PropTypes.string,
   btnTxt: PropTypes.string,
   features: PropTypes.array,
+  paymentLink: PropTypes.string,
 };

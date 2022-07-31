@@ -2,6 +2,7 @@ import styled from "styled-components";
 import DefaultLayout from "../components/DefaultLayout";
 import HeroSection from "../components/HeroSection";
 import PricingPlans from "../components/PricingPlans";
+import FeaturesSection from "../components/FeaturesSection";
 
 const Styles = styled.div`
   
@@ -16,8 +17,9 @@ const Home = () => {
   return (
     <Styles>
       <HeroSection />
-      <div className="text-center my-5">
-        <h2>Tarifs</h2>
+      <FeaturesSection />
+      <div className="text-center my-5 pt-5" id="tarifs">
+        <h2>Nos offres</h2>
         <PricingPlans />
       </div>
     </Styles>

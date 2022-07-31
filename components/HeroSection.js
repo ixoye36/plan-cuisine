@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import heroImg from "../assets/images/home_herob.png";
 import HeroImg from "./HeroImg";
+import HeroList from "./HeroList";
 
 const Styles = styled.div`
   
@@ -55,6 +56,9 @@ const Styles = styled.div`
       color: var(--yellowo-100);
     }
     
+    button {
+      font-family: "Poppins SemiBold"
+    }
 `;
 
 const HeroSection = () => (
@@ -68,7 +72,7 @@ const HeroSection = () => (
                 <div className="hero__sub text-white opacity-50 py-4">
                   <span>Plus besoin de patienter en magasin pour votre plan de cuisine. Vous nous donnez mesures, couleurs, budget et on se charge du reste !</span>
                 </div>
-                <a href="https://suq4etgjroh.typeform.com/to/BcZMnBhY">
+                <a href="#tarifs">
                   <button
                     type="button"
                     className="btn btn-primary w-50 hero__cta"
@@ -90,6 +94,11 @@ const HeroSection = () => (
                preserveAspectRatio="none">
             <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className="shape-fill"></path>
           </svg>
+        </div>
+        <div className="hero jumbotron bg-transparent">
+          <div className="container pt-5">
+            <HeroList />
+          </div>
         </div>
       </div>
     </Styles>

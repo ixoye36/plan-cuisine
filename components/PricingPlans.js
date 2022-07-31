@@ -49,6 +49,7 @@ const PricingPlans = () => {
                 "1 revue",
                 "1 devis magasin parmi votre choix",
               ]}
+              paymentLink="https://buy.stripe.com/test_6oE00xdTFc9A2EEcMN"
             />
           </div>
           <div className="col-4 position-relative">
@@ -64,6 +65,7 @@ const PricingPlans = () => {
                 "3 revues possibles",
                 "3 devis d'enseigne de votre choix",
               ]}
+              paymentLink="https://buy.stripe.com/test_00g14B16TehI3II3cc"
             />
           </div>
         </div>

@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import PricingPlans from "../components/PricingPlans";
 import FeaturesSection from "../components/FeaturesSection";
 import Head from "next/head";
+import HowTo from "../components/HowTo";
 
 const Styles = styled.div`
   
@@ -23,6 +24,7 @@ const Home = () => {
       </Head>
       <HeroSection />
       <FeaturesSection />
+      <HowTo />
       <div className="text-center my-5 pt-5" id="tarifs">
         <h2>Nos offres</h2>
         <PricingPlans />

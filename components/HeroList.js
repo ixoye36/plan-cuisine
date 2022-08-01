@@ -37,7 +37,7 @@ const HeroList = () => (
         <div className="col align-self-center me-5">
           <div className="vstack gap-3">
             <span className="amount">10+</span>
-            <span className="desc">années d'expérience</span>
+            <span className="desc">{"années d'expérience"}</span>
           </div>
         </div>
         <div className="col align-self-end">

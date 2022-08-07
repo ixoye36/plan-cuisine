@@ -138,6 +138,7 @@
 }
 
 body {
+  overflow-x: hidden;
   font-family: 'Poppins Regular', serif;
 }
 

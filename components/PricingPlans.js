@@ -47,7 +47,7 @@ const PricingPlans = () => {
               features={[
                 "1 proposition de plan",
                 "1 revue",
-                "1 devis magasin parmi votre choix",
+                "1 devis magasin de votre choix parmi Leroy Merlin, IKEA, Brico Dépôt ou BUT",
               ]}
               paymentLink={process.env.NEXT_PUBLIC_OFFER_SIMPLE_URL}
             />
@@ -63,7 +63,7 @@ const PricingPlans = () => {
               features={[
                 "3 propositions de plan",
                 "3 revues possibles",
-                "3 devis d'enseigne de votre choix",
+                "3 devis d'enseigne de votre choix parmi Leroy Merlin, IKEA, Brico Dépôt ou BUT",
               ]}
               paymentLink={process.env.NEXT_PUBLIC_OFFER_INSPIRATION_URL}
             />

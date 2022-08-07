@@ -117,7 +117,7 @@ const PricingCard = ({
 
   features.forEach((i, idx, array) => {
     feats.push(
-      <div className={`row${idx === array.length - 1 ? "" : " mb-3"}`}>
+      <div className={`row${idx === array.length - 1 ? "" : " mb-3"} align-items-start`}>
         <Image className="col-1 feat-img" src={checkmark} alt="" />
         <div className="col feat-img">{i}</div>
       </div>

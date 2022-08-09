@@ -29,6 +29,24 @@ const Styles = styled.div`
     border-color: var(--amazon-100) transparent transparent transparent;
     border-radius: 50%;
   }
+  
+    
+  @media screen and (max-width: 767px)
+  {
+    .row.card-row {
+      flex-direction: column !important;
+    }
+    .price-item {
+      width: 100% !important;
+      margin: 0 auto 2em;
+    }
+    
+    .price-item .card  {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    
+  }
 `;
 
 const PricingPlans = () => {
@@ -36,8 +54,8 @@ const PricingPlans = () => {
   return (
     <Styles>
       <div className="container text-center">
-        <div className="row justify-content-center py-5">
-          <div className="col-4 position-relative">
+        <div className="row justify-content-center py-5 card-row">
+          <div className="col-4 position-relative price-item">
             <PricingCard
               plan="Simple"
               price={29}
@@ -52,7 +70,7 @@ const PricingPlans = () => {
               paymentLink={process.env.NEXT_PUBLIC_OFFER_SIMPLE_URL}
             />
           </div>
-          <div className="col-4 position-relative">
+          <div className="col-4 position-relative price-item">
             <PricingCard
               plan="Inspiration"
               price={59}

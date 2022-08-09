@@ -12,7 +12,7 @@ const Styles = styled.div`
   
   .hero-bottom {
     position: relative;
-    height: 322px;
+    height: 500px;
   }
   
   .hero.jumbotron {
@@ -58,6 +58,13 @@ const Styles = styled.div`
     
     button {
       font-family: "Poppins SemiBold"
+    }
+    
+    @media screen and (max-width: 767px)
+    {
+      .hero__img {
+        display: none !important;
+      }
     }
 `;
 

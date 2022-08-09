@@ -22,6 +22,24 @@ const Styles = styled.div`
     font-family: "Poppins SemiBold";
     font-size: 18px;
   }
+  
+    
+  @media screen and (max-width: 767px)
+  {
+    padding: 0 15px !important;
+    .row {
+      flex-direction: column !important;
+    }
+    .text-box {
+      margin-left: 0 !important;
+    }
+    .zzimgCol {
+      margin: 0 0 2em !important;
+    }   
+    .feat-item {
+      width: 100% !important;
+    }
+  }
 `;
 
 const ZigzagRL = ({ src, title, subtitle, featList, btnText }) => (
@@ -34,7 +52,7 @@ const ZigzagRL = ({ src, title, subtitle, featList, btnText }) => (
             </div>
           )
         }
-        <div className="col ms-5">
+        <div className="col ms-5 text-box">
           <div className="h3">{title}</div>
           { subtitle && (<div className="subt__ my-5"><span>{subtitle}</span></div>) }
           { featList && (

@@ -29,6 +29,30 @@ const Styles = styled.div`
     font-family: "Poppins Regular";
     font-size: 16px;
   }
+  
+  @media screen and (max-width: 767px)
+  {
+    padding: 0 15px !important;
+    .container {
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+    .row {
+      flex-direction: column !important;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
+    }
+    .text-box {
+      margin-left: 0 !important;
+      padding: 0 !important;
+    }
+    .zzimgCol {
+      margin: 3em 0 0 !important;
+    }    
+    .feat-item {
+      width: 100% !important;
+    }
+  }
 `;
 
 const ZigzagLR = ({ title, src, subtitle, btnText, featList }) => (
@@ -61,8 +85,8 @@ const ZigzagLR = ({ title, src, subtitle, btnText, featList }) => (
           }
         </div>
         { src && (
-            <div className="col zzimgCol ms-5">
-              <Image src={src} alt=""/>
+            <div className="col zzimgCol ms-5 text-box">
+              <Image src={src} alt="" layout="raw" />
             </div>
           )
         }

@@ -14,6 +14,22 @@ const Styles = styled.div`
     font-size: 40px !important;
     line-height: 64px !important;
   }
+  
+  @media screen and (max-width: 767px)
+  {
+    .faq {
+      width: 100% !important;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+    
+    .howto-section {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      /* overflow-x: auto; */
+    }
+  }
 `;
 
 const Home = () => {
@@ -25,14 +41,16 @@ const Home = () => {
       </Head>
       <HeroSection />
       <FeaturesSection />
-      <HowTo />
+      <div className="howto-section">
+        <HowTo />
+      </div>
       <div className="text-center my-5 pt-5" id="tarifs">
         <h2 className="mt-5">Nos offres 🔥</h2>
         <PricingPlans />
       </div>
       <div className="container text-center mt-5 py-5">
         <h2 className="">Foire aux questions 🤓</h2>
-        <div className="w-75 mx-auto mt-5 pt-5 mb-5 pb-5">
+        <div className="w-75 mx-auto mt-5 pt-5 mb-5 pb-5 faq">
           <Accordion />
         </div>
       </div>

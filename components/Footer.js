@@ -44,6 +44,14 @@ const Styles = styled.div`
   .h6 {
     color: white;
   }
+  
+  @media screen and (max-width: 767px)
+  {
+    .ft__lists {
+      flex-direction: column;
+      gap: 1rem !important;
+    }
+  }
  
 `;
 

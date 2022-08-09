@@ -18,13 +18,38 @@ const Styles = styled.div`
     color: white;
     opacity: .7;
   }
+  @media screen and (max-width: 767px)
+  {
+    width: 100%;
+    overflow-x: auto;
+    .arrow-circle {
+      margin: 0 2em;
+    }
+    
+    h2 {
+      max-width: 260px;
+      position: sticky;
+      left: 0;
+    }
+    .subtitle {
+      max-width: 250px;
+      position: sticky;
+      left: 0;
+    }
+    
+    .howto-steps {
+      width: max-content;
+      overflow-x: auto;
+    }
+    
+  }
 `
 
 const HowTo = () => (
   <Styles className="container p-5 mb-5">
     <h2>Comment ça marche ?</h2>
     <div className="subtitle"><span>{"Votre plan de cuisine complet et de l'enseigne de votre choix en 3 étapes simples"}</span></div>
-    <div className="d-flex align-items-center justify-content-between my-5 px-5">
+    <div className="d-flex align-items-center justify-content-between my-5 px-5 howto-steps">
       <HowToStep
         number={1}
         title="Commande"

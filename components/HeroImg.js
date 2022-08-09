@@ -28,6 +28,13 @@ const Styles = styled.div`
     width: 100%;
     height: 200px;
   }
+  
+  @media screen and (max-width: 767px)
+  {
+    .hero__img {
+      display: none !important;
+    }
+  }
 `;
 
 const HeroImg = () => (

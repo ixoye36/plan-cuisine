@@ -44,7 +44,7 @@ const HowToStep = ({ number, title, subtitle }) => (
 HowToStep.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
 };
 
 export default HowToStep;

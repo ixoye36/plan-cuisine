@@ -97,8 +97,8 @@ const ZigzagLR = ({ title, src, subtitle, btnText, featList }) => (
 
 ZigzagLR.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.is,
-  src: PropTypes.string,
+  subtitle: PropTypes.string,
+  src: PropTypes.object,
   btnText: PropTypes.string,
   featList: PropTypes.array,
 };

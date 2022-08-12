@@ -66,6 +66,12 @@ const Styles = styled.div`
         display: none !important;
       }
     }
+    
+    .store-list {
+      font-family: "Poppins Medium";
+      font-size: 16px;
+      color: white;
+    }
 `;
 
 const HeroSection = () => (
@@ -76,7 +82,10 @@ const HeroSection = () => (
             <div className="col">
               <div className="vstack gap-3">
                 <h1>Mon plan cuisine pour seulement <span>29€</span></h1>
-                <div className="hero__sub text-white opacity-50 py-4">
+                <div className="store-list">
+                  <span>IKEA • Leroy Merlin • Brico Dépôt • BUT</span>
+                </div>
+                <div className="hero__sub text-white opacity-50 pt-3 pb-4">
                   <span>Plus besoin de patienter en magasin pour votre plan de cuisine. Vous nous donnez mesures, couleurs, budget et on se charge du reste !</span>
                 </div>
                 <a href="#tarifs">

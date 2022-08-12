@@ -6,6 +6,7 @@ import FeaturesSection from "../components/FeaturesSection";
 import Head from "next/head";
 import HowTo from "../components/HowTo";
 import Accordion from "../components/Accordion";
+import Script from "next/script";
 
 const Styles = styled.div`
   
@@ -38,7 +39,7 @@ const Home = () => {
       <Head>
         <title>CuisinePlan - Votre plan cuisine à moindre coût</title>
         <meta name="description" content="Obtenez votre devis de cuisine Leroy Merlin, IKEA ou Brico Depot" />
-        <script type="text/javascript" src="/public/hotjar.js"></script>
+        <Script type="text/javascript" src="/public/hotjar.js"></Script>
       </Head>
       <HeroSection />
       <FeaturesSection />

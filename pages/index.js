@@ -40,6 +40,19 @@ const Home = () => {
         <title>CuisinePlan - Votre plan cuisine à moindre coût</title>
         <meta name="description" content="Obtenez votre devis de cuisine Leroy Merlin, IKEA ou Brico Depot" />
       </Head>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-T6SQ4WH"
+          height="0"
+          width="0"
+          style={
+            {
+              display: 'none',
+              visibility: 'hidden',
+            }
+          }
+        />
+      </noscript>
       <HeroSection />
       <FeaturesSection />
       <div className="howto-section">

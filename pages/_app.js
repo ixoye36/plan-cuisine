@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }) {
           });
         `}
       </Script>
+      <Script type="text/javascript" src="/public/hotjar.js"></Script>
       <Component {...pageProps} />
     </>
   );

@@ -140,6 +140,7 @@ const PricingCard = ({
           type="submit"
           role="link"
           className="w-100 mx-auto mt-auto btn btn-white"
+          id={`cta-order-${plan.toLowerCase()}`}
           onClick={(e) => {
             e.preventDefault();
             window.location.href = paymentLink;

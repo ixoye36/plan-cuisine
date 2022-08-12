@@ -41,14 +41,14 @@ const HeroImg = () => (
   <Styles>
     <div className="vstack gap-3">
       <div className="main-img">
-        <Image src={Img1} alt="" layout="raw" />
+        <Image src={Img1} alt="" layout="raw" priority />
       </div>
       <div className="row align-items-center">
         <div className="col-lg-6">
-          <Image className="small-img" src={Img2} alt="" layout="raw" />
+          <Image className="small-img" src={Img2} alt="" layout="raw" priority />
         </div>
         <div className="col-lg-6">
-          <Image className="small-img" src={Img3} alt="" layout="raw" />
+          <Image className="small-img" src={Img3} alt="" layout="raw" priority />
         </div>
       </div>
     </div>

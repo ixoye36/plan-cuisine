@@ -38,6 +38,7 @@ const Home = () => {
       <Head>
         <title>CuisinePlan - Votre plan cuisine à moindre coût</title>
         <meta name="description" content="Obtenez votre devis de cuisine Leroy Merlin, IKEA ou Brico Depot" />
+        <script type="text/javascript" src="/public/hotjar.js"></script>
       </Head>
       <HeroSection />
       <FeaturesSection />

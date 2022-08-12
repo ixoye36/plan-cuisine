@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps }) {
         `}
       </Script>
       <Script type="text/javascript" src="/public/hotjar.js"></Script>
+      <Script type="text/javascript" src="/public/axeptio.js"></Script>
       <Component {...pageProps} />
     </>
   );

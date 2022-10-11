@@ -31,11 +31,11 @@ const cgu = () => (
 
       <p> Les présentes conditions générales de vente s&apos;appliquent &agrave; toutes les prestations de services&#160;conclues sur le site Interne <a href="https://cuisineplan.fr">cuisineplan.fr</a></p>
 
-      <p>Le site Internet CuisinePlan&#160;est un service de: la société&#160;MT Investissements située au 21 rue de la paix à Arnouville (95400).</p>
+      <p>Le site Internet CuisinePlan&#160;est un service de: la société&#160;MT36 Holding située au 59, rue de Ponthieu, 75008 Paris.</p>
 
       <p>Adresse URL du site:&#160;https://cuisineplan.fr</p>
 
-      <p>Adresse mail: cuisineplanfr@gmail.com</p>
+      <p>Adresse mail: support@cuisineplan.fr</p>
 
       <p>Le client déclare avoir pris connaissance et avoir accepté les conditions générales de vente antérieurement &agrave; la passation de la commande.&#160;La validation de la commande vaut donc acceptation des conditions générales de vente.</p>
 
@@ -185,7 +185,7 @@ const cgu = () => (
 
       <p> 9-1 Garantie légale de conformité</p>
 
-      <p>MT Investissements&#160;est garant de la conformité du bien vendu au contrat, permettant &agrave; l&apos;acheteur de formuler une demande au titre de la garantie légale de conformité prévue aux articles L. 217-3&#160;et suivants du code de la consommation.</p>
+      <p>MT36 Holding&#160;est garant de la conformité du bien vendu au contrat, permettant &agrave; l&apos;acheteur de formuler une demande au titre de la garantie légale de conformité prévue aux articles L. 217-3&#160;et suivants du code de la consommation.</p>
 
       <p>En cas de mise en oeuvre de la garantie légale de conformité, il est rappelé que:</p>
 
@@ -199,7 +199,7 @@ const cgu = () => (
 
       <p> 9-2 Garantie légales des vices cachés</p>
 
-      <p>Conformément aux articles 1641 et suivants du code civil,&#160;MT Investissements&#160;est garant des vices cachés pouvant affecter le bien vendu. Il appartiendra &agrave;&#160;l&apos;acheteur de prouver&#160;que les vices existaient &agrave; la vente du bien et&#160;sont de nature &agrave;&#160;rendre le bien impropre &agrave; l&apos;usage auquel il est&#160;destiné. Cette garantie doit &ecirc;tre mise en oeuvre dans un délai de deux ans &agrave; compter de la découverte du vice.&#160;</p>
+      <p>Conformément aux articles 1641 et suivants du code civil,&#160;MT36 Holding&#160;est garant des vices cachés pouvant affecter le bien vendu. Il appartiendra &agrave;&#160;l&apos;acheteur de prouver&#160;que les vices existaient &agrave; la vente du bien et&#160;sont de nature &agrave;&#160;rendre le bien impropre &agrave; l&apos;usage auquel il est&#160;destiné. Cette garantie doit &ecirc;tre mise en oeuvre dans un délai de deux ans &agrave; compter de la découverte du vice.&#160;</p>
 
       <p>L&apos;acheteur peut choisir entre la résolution de la vente ou une réduction du prix conformément &agrave; l&apos;article 1644 du code civil.</p>
 
@@ -207,7 +207,7 @@ const cgu = () => (
 
       <p></p>
 
-      <p> Tous les documents techniques, produits, dessins, photographies remis aux acheteurs demeurent la propriété exclusive de MT Investissements, seul titulaire des droits de propriété intellectuelle sur ces documents, et doivent lui &ecirc;tre rendus &agrave; sa demande.</p>
+      <p> Tous les documents techniques, produits, dessins, photographies remis aux acheteurs demeurent la propriété exclusive de MT36 Holding, seul titulaire des droits de propriété intellectuelle sur ces documents, et doivent lui &ecirc;tre rendus &agrave; sa demande.</p>
 
       <p>Les acheteurs clients s&apos;engagent &agrave; ne faire aucun usage de ces documents, susceptible de porter atteinte aux droits de propriété industrielle ou intellectuelle du fournisseur et s&apos;engagent &agrave; ne les divulguer &agrave; aucun tiers.</p>
 
@@ -217,7 +217,7 @@ const cgu = () => (
 
       <p> Tous les litiges auxquels les opérations d&apos;achat et de vente conclues en application des présentes conditions générales de vente pourraient donner lieu, concernant tant leur validité, leur interprétation, leur exécution, leur résiliation, leurs conséquences et leurs suites et qui n&apos;auraient pas pu &ecirc;tre résolus &agrave; l&apos;amiable entre le vendeur et le client, seront soumis aux tribunaux compétents dans les conditions de droit commun.</p>
 
-      <p>Pour la définition de la juridiction compétente, le vendeur élit domicile &agrave; 21 rue de la paix.</p>
+      <p>Pour la définition de la juridiction compétente, le vendeur élit domicile au 59, rue de Ponthieu, 75008 Paris.</p>
 
       <h2> Article 12&#160;-&#160;Langue du contrat</h2>
 

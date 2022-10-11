@@ -37,7 +37,7 @@ const FeaturesSection = () => (
     <ZigzagRL
       title="Votre plan cuisine sans effort"
       src={BluePrint}
-      subtitle="Designer une cuisine est chronophage, surtout lorsque l'on souhaite comparer les prix des différentes enseignes. Il faut en plus apprendre à utiliser leurs logiciels 3d ! On vous propose donc :"
+      subtitle="Designer une cuisine est chronophage, surtout lorsque l'on souhaite comparer différents devis de cuisine. Sans compter le temps passé à maitriser chaque logiciel 3d. Au lieu de cela, on vous propose :"
       featList={
         [
           {

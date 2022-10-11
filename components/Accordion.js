@@ -22,14 +22,14 @@ const FeatureAccordion = () => (
           parentId="accordion-feature"
         />
         <AccordionItem
-          header="Quelles enseignes sont disponibles dans les offres ?"
-          body="Nous proposons, aujourd'hui, des plans de cuisine des enseignes suivantes : Leroy Merlin, IKEA, Brico Dépôt et BUT"
+          header="Quelles enseignes sont inclues dans les offres ?"
+          body="Nous proposons, aujourd'hui, des plans de cuisine pour les enseignes suivantes : Leroy Merlin, IKEA, Brico Dépôt et BUT"
           occurrence="2"
           collapse={true}
           parentId="accordion-feature"
         />
         <AccordionItem
-          header="Quelles informations vous faut-il pour réaliser le plan ?"
+          header="Quelles informations vous faut-il fournir pour réaliser le plan ?"
           body="Outre vos goûts et préférences en couleurs, disposition ou budget, nous aurons surtout besoin d'un plan de votre pièce avec toutes les dimensions. Le plan peut être une photo ou un vrai plan d'architecte s'il s'agit d'un futur logement neuf."
           occurrence="3"
           collapse={true}
@@ -44,7 +44,7 @@ const FeatureAccordion = () => (
         />
         <AccordionItem
           header="Puis-je demander des modifications si le résultat ne me plait pas ?"
-          body="En fonction de l'offre choisie, vous pourrez demander jusqu'à 3 rectifications. Il est ainsi primordial de bien renseigner le plan de votre pièce."
+          body="En fonction de l'offre choisie, vous pourrez demander jusqu'à 3 rectifications. Il est ainsi primordial de bien renseigner le plan de votre pièce et les autres informations demandées dans le questionnaire."
           occurrence="5"
           collapse={true}
           parentId="accordion-feature"

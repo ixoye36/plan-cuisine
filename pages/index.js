@@ -7,6 +7,7 @@ import Head from "next/head";
 import HowTo from "../components/HowTo";
 import Accordion from "../components/Accordion";
 import Script from "next/script";
+import BlogLatest from "../components/BlogLatest";
 
 const Styles = styled.div`
   
@@ -64,10 +65,11 @@ const Home = () => {
       </div>
       <div className="container text-center mt-5 py-5">
         <h2 className="">Foire aux questions 🤓</h2>
-        <div className="w-75 mx-auto mt-5 pt-5 mb-5 pb-5 faq">
+        <div className="w-75 mx-auto mt-5 pt-5 faq">
           <Accordion />
         </div>
       </div>
+      <BlogLatest />
     </Styles>
   );
 };

@@ -53,20 +53,20 @@ const HeroList = () => (
       <div className="row info-list">
         <div className="col align-self-start me-5 jumb-info">
           <div className="vstack gap-3">
-            <span className="amount">2000+</span>
+            <span className="amount">100+</span>
             <span className="desc">Plans de cuisine crées</span>
           </div>
         </div>
-        <div className="col align-self-center me-5 jumb-info">
+        <div className="col align-self-center me-5jumb-info">
           <div className="vstack gap-3">
-            <span className="amount">10+</span>
-            <span className="desc">{"années d'expérience"}</span>
+            <span className="amount">100%</span>
+            <span className="desc">en ligne</span>
           </div>
         </div>
         <div className="col align-self-end jumb-info">
           <div className="vstack gap-3">
-            <span className="amount">20+</span>
-            <span className="desc">Plans en cours</span>
+            <span className="amount">1</span>
+            <span className="desc">{"Conseiller dédié à votre projet"}</span>
           </div>
         </div>
       </div>

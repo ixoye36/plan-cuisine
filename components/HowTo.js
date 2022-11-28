@@ -48,7 +48,7 @@ const Styles = styled.div`
 const HowTo = () => (
   <Styles className="container p-5 my-5">
     <h2>Comment ça marche ?</h2>
-    <div className="subtitle"><span>Votre plan de cuisine complet et de l'enseigne de votre choix en 3 étapes simples</span></div>
+    <div className="subtitle"><span>{`Votre plan de cuisine complet et de l'enseigne de votre choix en 3 étapes simples`}</span></div>
     <div className="d-flex align-items-center justify-content-between my-5 px-5 howto-steps">
       <HowToStep
         number={1}

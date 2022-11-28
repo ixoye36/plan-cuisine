@@ -55,6 +55,7 @@ const Styles = styled.div`
   }
     .part-title {
     white-space: pre;
+    max-width: 100%;
   }
 `;
 

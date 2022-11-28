@@ -55,7 +55,7 @@ const Home = () => {
       </noscript>
       <HeroSection />
       <FeaturesSection />
-      <div className="howto-section">
+      <div className="howto-section pt-5">
         <HowTo />
       </div>
       <div className="text-center my-5 pt-5" id="tarifs">

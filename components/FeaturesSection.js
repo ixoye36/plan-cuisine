@@ -33,7 +33,7 @@ const Styles = styled.div`
 `;
 
 const FeaturesSection = () => (
-  <Styles className="mt-5 pt-5">
+  <Styles className="mt-1 p1-5">
     <ZigzagRL
       title="Votre plan cuisine sans effort"
       src={BluePrint}

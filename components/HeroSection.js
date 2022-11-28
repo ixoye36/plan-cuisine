@@ -12,7 +12,6 @@ const Styles = styled.div`
   
   .hero-bottom {
     position: relative;
-    height: 500px;
   }
   
   .hero.jumbotron {

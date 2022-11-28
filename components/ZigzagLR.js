@@ -57,8 +57,8 @@ const Styles = styled.div`
 
 const ZigzagLR = ({ title, src, subtitle, btnText, featList }) => (
   <Styles>
-    <div className="container py-5">
-      <div className="row my-5 align-items-center justify-content-center">
+    <div className="container py-4">
+      <div className="row align-items-center justify-content-center">
         <div className="col me-5 zz-content">
           <div className="h3">{title}</div>
           { subtitle && (<div className="subt__ my-5"><span>{subtitle}</span></div>) }

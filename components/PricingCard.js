@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import checkmark from "../assets/images/icons/checkmark-fat.svg";
 
 const Styles = styled.div`
+  position: relative;
+  width: fit-content;
   .card {
     background-color: var(--bdazzledb-10);
     border: none;
@@ -90,6 +92,16 @@ const Styles = styled.div`
   #custom-range::-ms-thumb {
     background: var(--amazon-100);
   }
+  .popularTag {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 5px;
+    font-family: "Poppins Bold";
+    background-color: var(--yellowo-100);
+    color: var(--dsg-100);
+    z-index: 2;
+  }
 `;
 
 const PricingCard = ({
@@ -99,6 +111,7 @@ const PricingCard = ({
   features,
   text,
   paymentLink,
+  popularTag,
 }) => {
   const feats = [];
   useEffect(() => {
@@ -126,6 +139,7 @@ const PricingCard = ({
 
   return (
     <Styles>
+      { popularTag && (<div className="popularTag py-1 px-3">Populaire</div>)}
       <div className={`card py-4 px-4 text-start ${plan}`}>
         <div className="row justify-content-start align-items-center">
           <span className="col-5 price-tag pe-0">{price}€</span>
@@ -162,4 +176,5 @@ PricingCard.propTypes = {
   btnTxt: PropTypes.string,
   features: PropTypes.array,
   paymentLink: PropTypes.string,
+  popularTag: PropTypes.bool,
 };

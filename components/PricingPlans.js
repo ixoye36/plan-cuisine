@@ -84,6 +84,7 @@ const PricingPlans = () => {
                 "3 devis des enseignes de votre choix parmi Leroy Merlin, IKEA, Brico Dépôt ou encore BUT",
               ]}
               paymentLink={process.env.NEXT_PUBLIC_OFFER_INSPIRATION_URL}
+              popularTag={true}
             />
           </div>
         </div>

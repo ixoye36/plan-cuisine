@@ -40,6 +40,10 @@ const Styles = styled.div`
       width: 100% !important;
     }
   }
+  
+  .part-title {
+    white-space: pre;
+  }
 `;
 
 const ZigzagRL = ({ src, title, subtitle, featList, btnText }) => (
@@ -53,7 +57,7 @@ const ZigzagRL = ({ src, title, subtitle, featList, btnText }) => (
           )
         }
         <div className="col ms-5 text-box">
-          <div className="h3">{title}</div>
+          <div className="h3 part-title">{title}</div>
           { subtitle && (<div className="subt__ my-5"><span>{subtitle}</span></div>) }
           { featList && (
             <div className="row feat-list row-cols-2 gy-3 mb-5">

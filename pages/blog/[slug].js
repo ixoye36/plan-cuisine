@@ -1,15 +1,15 @@
 import styled from "styled-components";
-import Image from "next/image";
+import Image from "next/future/image";
 import PropTypes from "prop-types";
 import DefaultLayout from "../../components/DefaultLayout";
-import test from "../../assets/images/test.jpeg";
 
 const Styles = styled.div`
   background: var(--culture-100);
 
   .post-head {
-    height: calc(100vh - var(--header-h));
-    max-height: calc(100vh - var(--header-h));
+    position: relative;
+    height: fit-content;
+    max-height: fit-content;
   }
 
   .post-main-img {
@@ -20,9 +20,7 @@ const Styles = styled.div`
 
   .post-main-img img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 50% 0 50% 50%;
+    border-radius: 20px;
   }
 
   .post-subtitle {
@@ -42,41 +40,76 @@ const Styles = styled.div`
     color: var(--spacecdt-100);
     margin: 2em 0 1em;
   }
+  
+  .post-title {
+    font-family: 'Poppins SemiBold';
+  }
+  
+  .colorBlock {
+    width: 100%;  
+    position: absolute;
+    top: 0;
+    height: 500px;
+    background-color: var(--dsg-100);
+    z-index: 1;
+  }
+  
+  .z-1 {
+    z-index: 1;
+  }
+  
+  .category-flag {
+    color: var(--vvt-100);
+    text-decoration: none;
+    border: 1px solid var(--vvt-100);
+    padding: 5px 15px;
+    border-radius: 18px;
+  }
+  
+  .category-flag:hover {
+    color: var(--djg-100);
+    background-color: var(--vvt-100);
+    border: 1px solid var(--vvt-100);
+  }
+  
 `;
 
 const Post = ({ post }) => (
   <Styles>
-    <div className="container-fluid mb-5">
-      <div className="row justify-content-between align-items-center post-head">
-        <div className="container col-4">
-          <div className="post-stamp h6 mb-4">
-            10 jan 2022 • 10 min de lecture
+    <div className="container-fluid mb-5 px-0">
+      <div className="post-head pt-5">
+        <div className="colorBlock" />
+        <div className="vstack gap-2 w-50 text-center mx-auto bg-transparent z-1">
+          <div className="category-flags hstack gap-3 justify-content-center z-1 mb-3">
+          { post.item.elements.category.value.length > 0 && post.item.elements.category.value.map((item) => (
+            <a key={item.codename} className="category-flag" href="#">{item.name}</a>
+          ))}
           </div>
-          <h1 className="post-title mb-4">
-            {post.item.elements.article_title.value}
+          <h1 className="post-title mb-4 z-1 text-white">
+            {post.item.elements.title.value}
           </h1>
-          <div className="post-subtitle">
-            {post.item.elements.seo_description.value}
+          <div className="post-subtitle z-1 text-white mb-5">
+            {post.item.elements.subtitle.value}
           </div>
         </div>
-        <div className="post-main-img col-6">
-          <Image src={test} layout="fill" alt="" />
+        <div className="post-main-img mx-auto z-1 text-center">
+          <Image src={post.item.elements.main_image.value[0].url} raw width="996" height="610" alt="" />
         </div>
       </div>
     </div>
-    <div className="container py-5">
+    <div className="container pt-3 mt-5 pb-5">
       <div className="row justify-content-center">
         <div className="col-8">
           <div
             className="post-intro mb-5"
             dangerouslySetInnerHTML={{
-              __html: post.item.elements.article_introduction.value,
+              __html: post.item.elements.intro.value,
             }}
           />
           <div
             className="post-content"
             dangerouslySetInnerHTML={{
-              __html: post.item.elements.article_content.value,
+              __html: post.item.elements.content.value,
             }}
           />
         </div>
@@ -88,28 +121,28 @@ const Post = ({ post }) => (
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
   const res = await fetch(
-    "https://04gbgmyy00.execute-api.eu-west-3.amazonaws.com/prod/v1/kontents?type=tutorial"
+    "https://deliver.kontent.ai/8cf27219-7b19-014a-f32b-07bb3772efd2/items"
   );
   const posts = await res.json();
-  console.log(posts.items);
+  // console.log(posts.items);
 
   // Get the paths we want to pre-render based on posts
   const paths = posts.items.map((post) => ({
     // dynamic data
     params: {
-      slug: post.doc.item.system.codename,
+      slug: post.system.codename.replaceAll('_', '-'),
     },
   }));
-
   return { paths, fallback: false };
 }
 
 export async function getStaticProps({ params }) {
+  const slugFixed = params.slug.replaceAll('-', '_');
   const res = await fetch(
-    `https://04gbgmyy00.execute-api.eu-west-3.amazonaws.com/prod/v1/kontents/${params.slug}`
+    `https://deliver.kontent.ai/8cf27219-7b19-014a-f32b-07bb3772efd2/items/${slugFixed}`
   );
   const post = await res.json();
-
+  console.log(post);
   // Pass post data to the page via props
   return { props: { post } };
 }

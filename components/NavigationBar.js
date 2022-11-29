@@ -33,18 +33,12 @@ const NavigationBar = () => (
           </Link>
         </div>
         <div className="collapse navbar-collapse ms-5" id="basic-navbar-nav">
-          <ul className="navbar-nav me-auto align-items-center d-none">
+          <ul className="navbar-nav ms-auto align-items-center">
             <li className="nav-item me-4">
-              <a className="nav-link" href="#">Accueil</a>
+              <a className="nav-link" href="/">{"Commander mon plan de cuisine"}</a>
             </li>
             <li className="nav-item me-4">
-              <a className="nav-link" href="#">Services</a>
-            </li>
-            <li className="nav-item me-4">
-              <a className="nav-link" href="#">Blog</a>
-            </li>
-            <li className="nav-item me-4">
-              <a className="nav-link" href="#">A propos</a>
+              <a className="nav-link" href="blog">{"Blog"}</a>
             </li>
           </ul>
         </div>

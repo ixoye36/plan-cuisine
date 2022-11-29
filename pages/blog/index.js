@@ -1,9 +1,6 @@
-import { useTranslation } from "next-i18next";
 import styled from "styled-components";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Image from "next/image";
 import DefaultLayout from "../../components/DefaultLayout";
-import LogoIcon from "../../assets/images/futto-icon.png";
 import thumb from "../../assets/images/landsc.jpg";
 import BlogCard from "../../components/BlogCard";
 
@@ -69,7 +66,6 @@ const Styles = styled.div`
 `;
 
 const Blog = () => {
-  const { t } = useTranslation();
   const amount = 8;
   const zone = [];
   let i;
@@ -88,12 +84,9 @@ const Blog = () => {
     <Styles>
       <div className="hd__blog">
         <div className="hd__content">
-          <div className="lg__cc">
-            <Image src={LogoIcon} alt="" layout="raw" />
-          </div>
-          <h1 className="py-3">{t("Blog")}</h1>
+          <h1 className="py-3">{"Blog"}</h1>
           <div className="h5 blog__sbtitle">
-            {t("Découvrez nos derniers articles")}{" "}
+            {"Découvrez nos derniers articles"}
           </div>
         </div>
       </div>
@@ -111,9 +104,3 @@ export default Blog;
 Blog.getLayout = function getLayout(page) {
   return <DefaultLayout>{page}</DefaultLayout>;
 };
-
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["common", "footer"])),
-  },
-});

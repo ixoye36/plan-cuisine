@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Image from "next/future/image";
 import Link from "next/link";
 import Logo from "../assets/images/logo_transparent.svg";
+import {useRouter} from "next/router";
 
 const Styles = styled.div`
     position: relative;
@@ -21,30 +22,33 @@ const Styles = styled.div`
     
 `;
 
-const NavigationBar = () => (
-  <Styles>
-    <nav className="navbar py-4 navbar-expand-lg">
-      <div className="container">
-        <div className="navbar-brand nav-logo">
-          <Link href="/">
-            <a>
-              <Image src={Logo} alt="" />
-            </a>
-          </Link>
+const NavigationBar = () => {
+  const router = useRouter()
+  return (
+    <Styles>
+      <nav className="navbar py-4 navbar-expand-lg">
+        <div className="container">
+          <div className="navbar-brand nav-logo">
+            <Link href="/">
+              <a>
+                <Image src={Logo} alt=""/>
+              </a>
+            </Link>
+          </div>
+          <div className="collapse navbar-collapse ms-5" id="basic-navbar-nav">
+            <ul className="navbar-nav ms-auto align-items-center">
+              <li className="nav-item me-4">
+                <button type="button" className="btn btn-primary" onClick={() => router.push('/')}>{"Commander mon plan de cuisine"}</button>
+              </li>
+              <li className="nav-item me-4">
+                <a className="nav-link" href="/blog">{"Blog"}</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="collapse navbar-collapse ms-5" id="basic-navbar-nav">
-          <ul className="navbar-nav ms-auto align-items-center">
-            <li className="nav-item me-4">
-              <a className="nav-link" href="/">{"Commander mon plan de cuisine"}</a>
-            </li>
-            <li className="nav-item me-4">
-              <a className="nav-link" href="blog">{"Blog"}</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </Styles>
-);
+      </nav>
+    </Styles>
+  )
+};
 
 export default NavigationBar;

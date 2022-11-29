@@ -3,6 +3,7 @@ import Image from "next/image";
 import DefaultLayout from "../../components/DefaultLayout";
 import thumb from "../../assets/images/landsc.jpg";
 import BlogCard from "../../components/BlogCard";
+import PropTypes from "prop-types";
 
 const Styles = styled.div`
   min-height: calc(100vh - var(--header-h) - var(--footer-h));
@@ -65,22 +66,7 @@ const Styles = styled.div`
   }
 `;
 
-const Blog = () => {
-  const amount = 8;
-  const zone = [];
-  let i;
-
-  for (i = 0; i < amount; i++) {
-    zone.push(
-      <BlogCard
-        thumbnail={thumb}
-        title="Comment bien prescrire une semmelle orthopédique ?"
-        description="Blog Card is a component that displays your posts on your blog page. It includes many components such as creation date and time, title, content, illustrations, article type…"
-      />
-    );
-  }
-
-  return (
+const Blog = ({ posts }) => (
     <Styles>
       <div className="hd__blog">
         <div className="hd__content">
@@ -92,15 +78,48 @@ const Blog = () => {
       </div>
       <div className="blog-list">
         <div className="container py-5">
-          <div className="row row-cols-3 g-4">{zone}</div>
+          <div className="row row-cols-3 g-4">
+            { posts.length > 0 && posts.map((index) => (
+              <BlogCard
+                key={index.slug}
+                thumbnail={index.img}
+                title={index.title}
+                description={index.description}
+                tags={index.tags}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </Styles>
   );
-};
 
 export default Blog;
 
 Blog.getLayout = function getLayout(page) {
   return <DefaultLayout>{page}</DefaultLayout>;
+};
+
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts
+  const res = await fetch(
+    "https://deliver.kontent.ai/8cf27219-7b19-014a-f32b-07bb3772efd2/items"
+  );
+  const posts = await res.json();
+
+  const blogPosts = posts.items.map((post) => (
+    {
+      slug: post.system.codename.replaceAll('_', '-'),
+      title: post.elements.title.value,
+      description: post.elements.meta_description.value,
+      img: post.elements.main_image.value[0].url,
+      tags: post.elements.category.value,
+    }
+  ));
+  console.log(blogPosts);
+  return { props: { posts : blogPosts } };
+}
+
+Blog.propTypes = {
+  posts: PropTypes.any,
 };

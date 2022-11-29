@@ -48,7 +48,9 @@ const Styles = styled.div`
     }
     
     .hero__sub {
-      max-width: 430px;
+      max-width: 500px;
+      font-family: "Poppins SemiBold";
+      white-space: pre;
     }
     
     h1 > span {
@@ -84,8 +86,9 @@ const HeroSection = () => (
                 <div className="store-list">
                   <span>IKEA • Leroy Merlin • Brico Dépôt • BUT</span>
                 </div>
-                <div className="hero__sub text-white opacity-50 pt-3 pb-4">
-                  <span>Plus besoin de patienter en magasin pour votre plan de cuisine. Vous nous donnez mesures, couleurs, budget et on se charge du reste !</span>
+                <div className="hero__sub text-white pt-3 pb-4 h3">
+                  <span className="d-block mb-3">{`Fini la file d'attente en magasin ! 🕓 😩\n`}</span>
+                  <span>{`Donnez-nous vos mesures, couleurs, budget\net on se charge du reste !`}</span>
                 </div>
                 <a href="#tarifs">
                   <button

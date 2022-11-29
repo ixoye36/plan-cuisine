@@ -8,6 +8,8 @@ import HowTo from "../components/HowTo";
 import Accordion from "../components/Accordion";
 import Script from "next/script";
 import BlogLatest from "../components/BlogLatest";
+import Image from "next/future/image";
+import kitchen from "../assets/images/kitchen-ft-2.jpg";
 
 const Styles = styled.div`
   
@@ -31,6 +33,14 @@ const Styles = styled.div`
       width: 100%;
       /* overflow-x: auto; */
     }
+  }
+  
+  .footer-img {
+
+  }
+  
+   .footer-img img {
+    object-fit: cover;
   }
 `;
 
@@ -69,7 +79,9 @@ const Home = () => {
           <Accordion />
         </div>
       </div>
-      <BlogLatest />
+      <div className="container-fluid footer-img px-0">
+        <Image src={kitchen} layout="raw" />
+      </div>
     </Styles>
   );
 };

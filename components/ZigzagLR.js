@@ -53,6 +53,10 @@ const Styles = styled.div`
       width: 100% !important;
     }
   }
+    .part-title {
+    white-space: pre;
+    max-width: 100%;
+  }
 `;
 
 const ZigzagLR = ({ title, src, subtitle, btnText, featList }) => (
@@ -60,7 +64,7 @@ const ZigzagLR = ({ title, src, subtitle, btnText, featList }) => (
     <div className="container py-4">
       <div className="row align-items-center justify-content-center">
         <div className="col me-5 zz-content">
-          <div className="h3">{title}</div>
+          <div className="h3 part-title">{title}</div>
           { subtitle && (<div className="subt__ my-5"><span>{subtitle}</span></div>) }
           { featList && (
             <div className="row feat-list row-cols-2 gy-3 mb-5">

@@ -35,7 +35,7 @@ const Styles = styled.div`
 const FeaturesSection = () => (
   <Styles className="mt-1 p1-5">
     <ZigzagRL
-      title="Votre plan cuisine sans effort"
+      title={`Votre plan de cuisine\nsans effort`}
       src={BluePrint}
       subtitle="Designer une cuisine est chronophage, surtout lorsque l'on souhaite comparer différents devis de cuisine. Sans compter le temps passé à maitriser chaque logiciel 3d. Au lieu de cela, on vous propose :"
       featList={

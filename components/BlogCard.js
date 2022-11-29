@@ -39,17 +39,19 @@ const Styles = styled.div`
 
 `;
 
-const BlogCard = ({ title, alt, description, thumbnail }) => {
+const BlogCard = ({ title, alt, description, thumbnail, tags }) => {
   return (
     <Styles>
       <a href="#" className="blog-card">
         <div className="card">
           <div className="article-thumb">
-            <Image src={thumbnail} alt={alt} layout="raw" />
+            <Image src={thumbnail} alt={alt} width="300" height="300" layout="fill" />
           </div>
           <div className="article-b px-3 py-4">
-            <div className="tags pb-3">
-              <BlogTag label="Fonctionnalités" url="features" />
+            <div className="hstatags pb-3">
+              { tags.length > 0 && tags.map((index) => (
+                <BlogTag key={index.codename} label={index.name} url={index.codename} />
+              ))}
             </div>
             <h5 className="article-title">{title}</h5>
             <div className="article-desc pt-3">{description}</div>

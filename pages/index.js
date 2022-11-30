@@ -65,6 +65,8 @@ const Home = () => {
         />
       </noscript>
       <HeroSection />
+      <h3>{process.env.NEXT_PUBLIC_KONTENT_URL}</h3>
+      <h4>{process.env.NEXT_PUBLIC_KONTENT_PROJECT_ID}</h4>
       <FeaturesSection />
       <div className="howto-section pt-5">
         <HowTo />

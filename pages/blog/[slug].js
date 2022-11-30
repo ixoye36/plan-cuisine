@@ -121,7 +121,7 @@ const Post = ({ post }) => (
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
   const res = await fetch(
-    `https://${process.env.NEXT_PUBLIC_KONTENT_URL}/${process.env.NEXT_PUBLIC_KONTENT_PROJECT_ID}/items`
+    "https://deliver.kontent.ai/8cf27219-7b19-014a-f32b-07bb3772efd2/items"
   );
   const posts = await res.json();
   // console.log(posts.items);
@@ -139,7 +139,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const slugFixed = params.slug.replaceAll('-', '_');
   const res = await fetch(
-    `https://${process.env.NEXT_PUBLIC_KONTENT_URL}/${process.env.NEXT_PUBLIC_KONTENT_PROJECT_ID}/items/${slugFixed}`
+    `https://deliver.kontent.ai/8cf27219-7b19-014a-f32b-07bb3772efd2/items/${slugFixed}`
   );
   const post = await res.json();
   console.log(post);

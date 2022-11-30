@@ -41,7 +41,7 @@ const NavigationBar = () => {
                 <button type="button" className="btn btn-primary" onClick={() => router.push('/')}>{"Commander mon plan de cuisine"}</button>
               </li>
               <li className="nav-item me-4">
-                <a className="nav-link" href="/blog">{"Blog"}</a>
+                <Link className="nav-link" href="/blog">{"Blog"}</Link>
               </li>
             </ul>
           </div>

@@ -7,13 +7,7 @@ const nextConfig = {
     }
   },
   images: {
-    domains: ['cuisineplan.fr'],
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'assets-eu-01.kc-usercontent.com',
-      },
-    ],
+    domains: ['cuisineplan.fr', 'assets-eu-01.kc-usercontent.com'],
   },
 }
 

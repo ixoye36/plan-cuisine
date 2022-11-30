@@ -7,24 +7,31 @@ import Blog from "../pages/blog";
 
 const Styles = styled.div``;
 
-const BlogLatest = ({ posts }) => (
-  <Styles>
-    <div className="container py-5">
-      <div className="h2 mb-5">Derniers articles 📚</div>
-      <div className="row row-cols-3 g-4 mb-5">
-        { posts.length > 0 && posts.map((index) => (
-          <BlogCard
-            key={index.slug}
-            thumbnail={index.img}
-            title={index.title}
-            description={index.description}
-            tags={index.tags}
-          />
-        ))}
+const BlogLatest = ({ posts }) => {
+  console.log(posts);
+  return (
+    <Styles>
+      <div className="container py-5">
+        <div className="h2 mb-5">Derniers articles 📚</div>
+        <div className="row row-cols-3 g-4 mb-5">
+          { posts.map((index) => (
+            <BlogCard
+              key={index.slug}
+              thumbnail={index.img}
+              title={index.title}
+              description={index.description}
+              tags={index.tags}
+            />
+          ))}
+        </div>
       </div>
-    </div>
-  </Styles>
-);
+    </Styles>
+  )
+};
+
+BlogLatest.propTypes = {
+  posts: PropTypes.any,
+};
 
 export default BlogLatest;
 
@@ -37,9 +44,9 @@ export async function getStaticProps() {
   const res = await fetch(
     "https://deliver.kontent.ai/8cf27219-7b19-014a-f32b-07bb3772efd2/items"
   );
-  const posts = await res.json();
+  const lposts = await res.json();
 
-  const blogPosts = posts.items.map((post) => (
+  const blogPosts = lposts.items.map((post) => (
     {
       slug: post.system.codename.replaceAll('_', '-'),
       title: post.elements.title.value,
@@ -51,7 +58,3 @@ export async function getStaticProps() {
   console.log(blogPosts);
   return { props: { posts : blogPosts } };
 }
-
-BlogLatest.propTypes = {
-  posts: PropTypes.any,
-};

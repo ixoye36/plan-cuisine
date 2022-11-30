@@ -36,7 +36,7 @@ const NavigationBar = () => {
             </Link>
           </div>
           <div className="collapse navbar-collapse ms-5" id="basic-navbar-nav">
-            <ul className="navbar-nav ms-auto align-items-center">
+            <ul className="navbar-nav ms-auto align-items-center d-none">
               <li className="nav-item me-4">
                 <button type="button" className="btn btn-primary" onClick={() => router.push('/')}>{"Commander mon plan de cuisine"}</button>
               </li>

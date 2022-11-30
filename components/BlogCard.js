@@ -23,7 +23,6 @@ const Styles = styled.div`
   .article-thumb {
     width: 100%;
     height: 250px;
-    padding: 10px;
   }
 
   .article-thumb img {
@@ -39,16 +38,16 @@ const Styles = styled.div`
 
 `;
 
-const BlogCard = ({ title, alt, description, thumbnail, tags }) => {
+const BlogCard = ({ title, alt, description, thumbnail, tags, slug }) => {
   return (
     <Styles>
-      <a href="#" className="blog-card">
-        <div className="card">
-          <div className="article-thumb">
+      <a href={`/blog/${slug}`} className="blog-card">
+        <div className="d-flex flex-column">
+          <div className="article-thumb mb-3">
             <Image src={thumbnail} alt={alt} width="300" height="300" layout="fill" />
           </div>
-          <div className="article-b px-3 py-4">
-            <div className="hstatags pb-3">
+          <div className="article-b">
+            <div className="hstack gap-3 tags pb-3">
               { tags.length > 0 && tags.map((index) => (
                 <BlogTag key={index.codename} label={index.name} url={index.codename} />
               ))}
@@ -69,6 +68,7 @@ BlogCard.propTypes = {
   alt: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
+  slug: PropTypes.string,
 };
 
 BlogTag.propTypes = {

@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 
 const Styles = styled.div`
-  background-color: var(--dsg-100);
+  background-color: var(--vvt-100);
   border-radius: 5px;
   padding: 5px 10px;
   width: fit-content;
   .tag-element {
-    color: var(--yellowo-20);
+    color: var(--chineseb-100);
   }
 `;
 

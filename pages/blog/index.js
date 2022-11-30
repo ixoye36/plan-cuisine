@@ -7,7 +7,9 @@ import PropTypes from "prop-types";
 
 const Styles = styled.div`
   min-height: calc(100vh - var(--header-h) - var(--footer-h));
-
+  h1 {
+    font-family: 'Poppins Bold';
+  }
   .hd__blog {
     position: relative;
     display: block;
@@ -18,8 +20,7 @@ const Styles = styled.div`
     margin-right: -50vw;
     padding-left: 0;
     padding-right: 0;
-    background: var(--culture-100);
-    padding-top: 160px;
+    padding-top: 3em;
   }
 
   .hd__content {
@@ -86,6 +87,7 @@ const Blog = ({ posts }) => (
                 title={index.title}
                 description={index.description}
                 tags={index.tags}
+                slug={index.slug}
               />
             ))}
           </div>

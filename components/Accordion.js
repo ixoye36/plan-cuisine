@@ -23,7 +23,7 @@ const FeatureAccordion = () => (
         />
         <AccordionItem
           header="Quelles enseignes sont inclues dans les offres ?"
-          body="Nous proposons, aujourd'hui, des plans de cuisine pour les enseignes suivantes : Leroy Merlin, IKEA, Brico Dépôt et BUT"
+          body="Nous proposons aujourd'hui des devis et plans de cuisine des enseignes suivantes : Leroy Merlin, IKEA, Brico Dépôt et BUT. Cette liste est bien sûr amenée à évoluer en fonction des besoins."
           occurrence="2"
           collapse={true}
           parentId="accordion-feature"

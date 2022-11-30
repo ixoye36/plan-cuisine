@@ -139,7 +139,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const slugFixed = params.slug.replaceAll('-', '_');
   const res = await fetch(
-    `https://deliver.kontent.ai/8cf27219-7b19-014a-f32b-07bb3772efd2/items/${slugFixed}`
+    `https://${process.env.NEXT_PUBLIC_KONTENT_URL}/${process.env.NEXT_PUBLIC_KONTENT_PROJECT_ID}/items/${slugFixed}`
   );
   const post = await res.json();
   console.log(post);

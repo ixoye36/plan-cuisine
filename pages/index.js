@@ -80,7 +80,7 @@ const Home = () => {
         </div>
       </div>
       <div className="container-fluid footer-img px-0">
-        <Image src={kitchen} layout="raw" />
+        <Image src={kitchen} layout="raw" alt="" />
       </div>
     </Styles>
   );
